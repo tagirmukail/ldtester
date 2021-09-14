@@ -1,0 +1,16 @@
+LogLevel: 4 # 5: Debug, 4:Info, 3:Error
+Server:
+  Port: 8000
+  WriteTimeout: 430 # sec
+  ReadTimeout: 430 # sec
+
+LoadTest:
+  StressTestTimeout: 30 # in sec
+  MaxIdleConnPerHost: 200
+  DisableCompression: false
+  DisableKeepAlive: true
+  UseHTTP2: false
+  Timeout: 3 # sec
+  Method: "GET"
+  AcceptHeaderRequest: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+  UserAgent: "" # install your user agent
